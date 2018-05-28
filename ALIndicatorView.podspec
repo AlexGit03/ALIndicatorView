@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name = "ALIndicatorView"
   s.version  = "1.0.0"
-  s.license = { :type => 'MIT', :file => "LICENSE" }
+  s.license = { :type => 'MIT', :file => "LICENSE.txt" }
   s.summary  = "Indicator view"
   s.homepage = "https://github.com/AlexGit03/ALIndicatorView"
   s.author   = { "Chillura Antonio Alessandro" => "chillura03@gmail.com" }
