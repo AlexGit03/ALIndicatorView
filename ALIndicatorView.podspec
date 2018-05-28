@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "ALIndicatorView"
-  s.version      = "0.0.1"
+  s.version      = "1.0.0"
   s.summary      = "A short description of ALIndicatorView."
 
   # This description is used to generate tags and improve search results.
@@ -79,7 +79,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/AlexGit03/ALIndicatorView", :tag => "9.0" }
+  s.source       = { :git => "https://github.com/AlexGit03/ALIndicatorView":tag => "1.0.0" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
