@@ -8,12 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		4C57587620BC525200930BCA /* ALIndicatorView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C57587420BC525200930BCA /* ALIndicatorView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C57588320BC527F00930BCA /* NSObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C57587D20BC527F00930BCA /* NSObject+Extension.swift */; };
+		4C57588420BC527F00930BCA /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C57587E20BC527F00930BCA /* UIView+Extension.swift */; };
+		4C57588520BC527F00930BCA /* ALViewIndicator.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C57588020BC527F00930BCA /* ALViewIndicator.xib */; };
+		4C57588620BC527F00930BCA /* ALViewAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C57588120BC527F00930BCA /* ALViewAnimation.swift */; };
+		4C57588720BC527F00930BCA /* ALViewIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C57588220BC527F00930BCA /* ALViewIndicator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4C57587120BC525200930BCA /* ALIndicatorView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ALIndicatorView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C57587420BC525200930BCA /* ALIndicatorView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALIndicatorView.h; sourceTree = "<group>"; };
 		4C57587520BC525200930BCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C57587D20BC527F00930BCA /* NSObject+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Extension.swift"; sourceTree = "<group>"; };
+		4C57587E20BC527F00930BCA /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		4C57588020BC527F00930BCA /* ALViewIndicator.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ALViewIndicator.xib; sourceTree = "<group>"; };
+		4C57588120BC527F00930BCA /* ALViewAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALViewAnimation.swift; sourceTree = "<group>"; };
+		4C57588220BC527F00930BCA /* ALViewIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALViewIndicator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,10 +56,31 @@
 		4C57587320BC525200930BCA /* ALIndicatorView */ = {
 			isa = PBXGroup;
 			children = (
+				4C57587F20BC527F00930BCA /* ALIndicator */,
+				4C57587C20BC527F00930BCA /* ExstensionForXib */,
 				4C57587420BC525200930BCA /* ALIndicatorView.h */,
 				4C57587520BC525200930BCA /* Info.plist */,
 			);
 			path = ALIndicatorView;
+			sourceTree = "<group>";
+		};
+		4C57587C20BC527F00930BCA /* ExstensionForXib */ = {
+			isa = PBXGroup;
+			children = (
+				4C57587D20BC527F00930BCA /* NSObject+Extension.swift */,
+				4C57587E20BC527F00930BCA /* UIView+Extension.swift */,
+			);
+			path = ExstensionForXib;
+			sourceTree = "<group>";
+		};
+		4C57587F20BC527F00930BCA /* ALIndicator */ = {
+			isa = PBXGroup;
+			children = (
+				4C57588020BC527F00930BCA /* ALViewIndicator.xib */,
+				4C57588120BC527F00930BCA /* ALViewAnimation.swift */,
+				4C57588220BC527F00930BCA /* ALViewIndicator.swift */,
+			);
+			path = ALIndicator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -121,6 +152,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C57588520BC527F00930BCA /* ALViewIndicator.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +163,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C57588620BC527F00930BCA /* ALViewAnimation.swift in Sources */,
+				4C57588720BC527F00930BCA /* ALViewIndicator.swift in Sources */,
+				4C57588420BC527F00930BCA /* UIView+Extension.swift in Sources */,
+				4C57588320BC527F00930BCA /* NSObject+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +298,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = ALIndicatorView/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = chillura.ALIndicatorView;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -283,6 +320,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = ALIndicatorView/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = chillura.ALIndicatorView;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
