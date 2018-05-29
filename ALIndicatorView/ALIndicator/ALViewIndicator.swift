@@ -43,7 +43,7 @@ open class ALViewIndicator: UIView {
         self.isInLoading = false
     }
     
-    func setColorIndicator(_ color:UIColor) {
+    open func setColorIndicator(_ color:UIColor) {
         viewIndicator.backgroundColor = color
     }
 

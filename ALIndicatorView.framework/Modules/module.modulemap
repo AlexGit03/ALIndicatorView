@@ -1,0 +1,11 @@
+framework module ALIndicatorView {
+  umbrella header "ALIndicatorView.h"
+
+  export *
+  module * { export * }
+}
+
+module ALIndicatorView.Swift {
+    header "ALIndicatorView-Swift.h"
+    requires objc
+}
